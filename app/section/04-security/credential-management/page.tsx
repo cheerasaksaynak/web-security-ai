@@ -48,7 +48,7 @@ export default function CredentialManagementPage() {
         </div>
 
         {/* Code examples */}
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
+        <div className="flex flex-col gap-6 mb-6">
           <CodeBlock
             variant="vulnerable"
             label="VULNERABLE — Hardcoded Credentials"
@@ -90,7 +90,7 @@ const stripe = new Stripe(
           />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           <CodeBlock
             variant="neutral"
             language=".gitignore"

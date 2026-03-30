@@ -129,7 +129,7 @@ export default function OwaspPage() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="flex flex-col gap-6 mb-8">
             <CodeBlock
               variant="vulnerable"
               label="VULNERABLE — String Concatenation"
@@ -221,7 +221,7 @@ const user = await prisma.user.findFirst({
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           <CodeBlock
             variant="vulnerable"
             label="VULNERABLE — innerHTML + direct output"
@@ -299,7 +299,7 @@ async headers() {
             <div className="w-16 h-1 bg-sky-500 rounded-full mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="flex flex-col gap-8 mb-12">
             {/* Password */}
             <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
               <div className="flex items-center gap-3 mb-4">
@@ -366,7 +366,7 @@ const isMatch = await bcrypt.compare(input, hash);
               <i className="fas fa-door-open text-sky-500 text-xl"></i>
               <h3 className="font-bold text-slate-900 text-xl">A01 — Broken Access Control</h3>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="flex flex-col gap-6">
               <div>
                 <p className="text-slate-600 text-sm mb-4">
                   ช่องโหว่อันดับ 1 ใน OWASP 2021 — ผู้ใช้สามารถเข้าถึง resource หรือทำ action ที่ไม่มีสิทธิ์

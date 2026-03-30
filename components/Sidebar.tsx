@@ -173,7 +173,10 @@ export default function Sidebar() {
                           `}
                         >
                           <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors ${childIsActive ? 'bg-sky-400' : 'bg-slate-700'}`}></span>
-                          <span className="truncate">{child.label}</span>
+                          <span className="min-w-0 flex-1 flex flex-col">
+                            <span className="truncate">{child.label}</span>
+                            {childIsActive && <span className="h-px bg-sky-400 rounded-full mt-0.5" />}
+                          </span>
                         </Link>
                       )
                     })}

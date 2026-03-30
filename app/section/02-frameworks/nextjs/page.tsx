@@ -64,7 +64,7 @@ export default function NextjsPage() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           <div>
             <h3 className="font-bold text-slate-900 text-lg mb-4">โครงสร้างโปรเจกต์ Next.js (App Router)</h3>
             <CodeBlock

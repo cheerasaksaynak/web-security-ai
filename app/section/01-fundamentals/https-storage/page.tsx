@@ -96,13 +96,13 @@ export default function HttpsStoragePage() {
                 </div>
                 <p className="text-slate-600 text-sm mb-3">{s.desc}</p>
                 <div className="space-y-2 text-xs">
-                  <div className="p-2 bg-emerald-900/30 rounded border border-emerald-800 text-emerald-300">
+                  <div className="p-2 bg-emerald-50 rounded border border-emerald-200 text-emerald-800">
                     <strong>Use case:</strong> {s.useCase}
                   </div>
-                  <div className="p-2 bg-sky-900/30 rounded border border-sky-800 text-sky-300">
+                  <div className="p-2 bg-sky-50 rounded border border-sky-200 text-sky-800">
                     <strong>Security:</strong> {s.security}
                   </div>
-                  <div className="p-2 bg-red-900/30 rounded border border-red-800 text-red-300">
+                  <div className="p-2 bg-red-50 rounded border border-red-200 text-red-800">
                     <strong>Risk:</strong> {s.risk}
                   </div>
                 </div>

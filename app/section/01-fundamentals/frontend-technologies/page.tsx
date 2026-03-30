@@ -12,7 +12,7 @@ export default function FrontendTechnologiesPage() {
             <div className="w-16 h-1 bg-sky-500 rounded-full mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex flex-col gap-8">
             {/* HTML */}
             <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-orange-200 dark:border-orange-800 border-t-4 border-t-orange-500">
               <h3 className="font-black text-orange-500 text-2xl mb-4">HTML</h3>

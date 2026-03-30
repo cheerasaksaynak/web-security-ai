@@ -12,7 +12,7 @@ export default function ReactPage() {
             <p className="text-slate-600">JavaScript library สำหรับสร้าง User Interface — พัฒนาโดย Meta (Facebook)</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 mb-10">
+          <div className="flex flex-col gap-10 mb-10">
             <div>
               <div className="space-y-4">
                 {[

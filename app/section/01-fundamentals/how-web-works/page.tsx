@@ -13,7 +13,7 @@ export default function HowWebWorksPage() {
 
         {/* Diagram */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
-          <div className="bg-sky-50 dark:bg-sky-950/30 border-2 border-sky-200 dark:border-sky-800 rounded-2xl p-8 text-center w-full md:w-64">
+          <div className="bg-sky-50 dark:bg-sky-950/30 border-2 border-sky-200 dark:border-sky-800 rounded-2xl p-8 text-center flex-1">
             <i className="fas fa-display text-sky-500 text-4xl mb-4 block"></i>
             <h3 className="font-bold text-slate-900 dark:text-white text-lg mb-3">Client (Browser)</h3>
             <div className="space-y-2 text-left">
@@ -23,7 +23,7 @@ export default function HowWebWorksPage() {
                 { color: 'text-yellow-500', label: 'JavaScript', desc: 'ฟังก์ชันการทำงาน' },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-2 text-sm">
-                  <span className={`font-bold ${item.color} w-8`}>{item.label}</span>
+                  <span className={`font-bold shrink-0 ${item.color}`}>{item.label}</span>
                   <span className="text-slate-500">{item.desc}</span>
                 </div>
               ))}
@@ -42,7 +42,7 @@ export default function HowWebWorksPage() {
             </div>
           </div>
 
-          <div className="bg-slate-700 border-2 border-slate-600 rounded-2xl p-8 text-center w-full md:w-64">
+          <div className="bg-slate-700 border-2 border-slate-600 rounded-2xl p-8 text-center flex-1">
             <i className="fas fa-server text-sky-400 text-4xl mb-4 block"></i>
             <h3 className="font-bold text-white text-lg mb-3">Server (Backend)</h3>
             <div className="space-y-2 text-left">
@@ -52,7 +52,7 @@ export default function HowWebWorksPage() {
                 { color: 'text-emerald-400', label: 'Auth', desc: 'ยืนยันตัวตน' },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-2 text-sm">
-                  <span className={`font-bold ${item.color} w-16`}>{item.label}</span>
+                  <span className={`font-bold shrink-0 ${item.color}`}>{item.label}</span>
                   <span className="text-slate-400">{item.desc}</span>
                 </div>
               ))}
